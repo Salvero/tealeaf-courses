@@ -31,7 +31,6 @@
 # end
 
 #4
-
 # b = [1, 2, 3, 4, 5]
 
 # #Prepend
@@ -42,7 +41,6 @@
 # puts b 
 
 # #5
-
 # b = [0, 1, 2, 3, 4, 5, 11]
 
 # #Remove last array
@@ -55,16 +53,51 @@
 
 # print b
 
-#5
+# #6
+# # Remove duplicates to use uniq method
 
-# Remove duplicates to use uniq method
+# array = [1, 1, 1, 2, 2, 3, 4, 5, 6, 6, 7, 7, 8, 9, 10]
 
-array = [1, 1, 1, 2, 2, 3, 4, 5, 6, 6, 7, 7, 8, 9, 10]
+# #Do not modify calling object
+# print array.uniq
 
-#Do not modify calling object
-print array.uniq
+# print "***"
 
-print "***"
+# #Modify the calling object
+# print array.uniq!
 
-#Modify the calling object
-print array.uniq!
+# #7
+# Array = []
+# Hash =  { :key => value }
+# Hash2 = { key: value }
+
+# #8
+# person = { :name => "Salman", :favorite => "Computer" }
+
+# person = { name: "Salman", favorite: "Computer" }
+
+#9
+h = { a:1, b:2, c:3, d:4 }
+
+# #find b
+# puts h[:b]
+
+# #add e
+# h[:e] = 5
+
+# puts h
+
+#remove all key-value pairs for less than 3
+
+h.delete_if { |k, v| v < 3 }
+
+puts h
+
+#10
+# hash values in arrays
+h = { name: ['Mike', 'Jon', 'Kevin']}
+
+#array of hashes
+arr = [ {name: 'Mike'}, {name: 'Jon'}, {name: 'Kevin'} ]
+
+#11
